@@ -8,7 +8,6 @@ module.exports = {
         fraucesBold: ["frauces-bold", "sans-serif"],
         fraucesBlack: ["frauces-black", "sans-serif"],
       },
-
       colors: {
         "soft-red": "hsl(7, 99%, 70%)",
         "dark-yellow": "hsl(51, 100%, 49%)",
@@ -19,6 +18,9 @@ module.exports = {
         "grayish-blue1": "hsl(213, 9%, 39%)",
         "grayish-blue2": "hsl(232, 10%, 55%)",
         "grayish-blue3": "hsl(210, 4%, 67%)",
+      },
+      backgroundImage: {
+        header: "url('../images/mobile/image-header.jpg')",
       },
     },
   },
