@@ -513,15 +513,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+@font-face {
+  font-family: "barlow";
+
+  src: url(../fonts/Barlow-SemiBold.ttf) format("truetype");
 }
 
-.font-bold {
-  font-weight: 700;
+@font-face {
+  font-family: "frauces-bold";
+
+  src: url(../fonts/Fraunces_72pt-Bold.ttf) format("truetype");
 }
 
-.underline {
-  text-decoration-line: underline;
+@font-face {
+  font-family: "frauces-black";
+
+  src: url(../fonts/Fraunces_72pt-Black.ttf) format("truetype");
+}
+
+html {
+  font-family: "barlow", sans-serif;
 }

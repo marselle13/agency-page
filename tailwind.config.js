@@ -2,7 +2,25 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        barlow: ["barlow", "sans-serif"],
+        fraucesBold: ["frauces-bold", "sans-serif"],
+        fraucesBlack: ["frauces-black", "sans-serif"],
+      },
+
+      colors: {
+        "soft-red": "hsl(7, 99%, 70%)",
+        "dark-yellow": "hsl(51, 100%, 49%)",
+        "dark-blue": "hsl(198, 62%, 26%)",
+        "dark-cyan1": "hsl(167, 40%, 24%)",
+        "dark-cyan2": "hsl(168, 34%, 41%)",
+        "desaturated-blue": "hsl(212, 27%, 19%)",
+        "grayish-blue1": "hsl(213, 9%, 39%)",
+        "grayish-blue2": "hsl(232, 10%, 55%)",
+        "grayish-blue3": "hsl(210, 4%, 67%)",
+      },
+    },
   },
   plugins: [],
 };
