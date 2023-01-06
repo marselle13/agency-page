@@ -20,7 +20,11 @@ module.exports = {
         "grayish-blue3": "hsl(210, 4%, 67%)",
       },
       backgroundImage: {
-        header: "url('../images/mobile/image-header.jpg')",
+        headerMobile: "url('../images/mobile/image-header.jpg')",
+        headerDesktop: "url('../images/desktop/image-header.jpg')",
+      },
+      screens: {
+        "3xl": "1440px",
       },
     },
   },
