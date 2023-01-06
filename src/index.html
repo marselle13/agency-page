@@ -12,25 +12,48 @@
     >
       <nav class="flex justify-between">
         <img src="../images/logo.svg" alt="" class="" />
-        <div class="flex md:hidden">
+        <button class="flex md:hidden" id="burger">
           <img src="../images/icon-hamburger.svg" alt="" />
-        </div>
+        </button>
 
-        <div class="md:flex hidden">
-          <ul class="flex gap-[50px]">
+        <div
+          class="menu absolute w-[336px] top-24 h-[300px] md:static md:w-auto md:flex md:h-auto bg-white md:bg-transparent right-6 hidden"
+        >
+          <div
+            class="w-11 overflow-hidden inline-block absolute -top-16 right-0 md:hidden"
+          >
+            <div
+              class="h-16 bg-white rotate-45 transform origin-bottom-left"
+            ></div>
+          </div>
+          <ul
+            class="md:flex gap-[50px] block text-center space-y-8 pt-10 md:space-y-0 md:pt-0"
+          >
             <li>
-              <a href="" class="text-white text-lg">About</a>
-            </li>
-            <li>
-              <a href="" class="text-white text-lg">Services</a>
-            </li>
-            <li>
-              <a href="" class="text-white text-lg">Projects</a>
+              <a
+                href="#about"
+                class="md:text-white text-lg text-grayish-blue3 md:hover:text-desaturated-blue transition ease-in-out"
+                >About</a
+              >
             </li>
             <li>
               <a
-                href=""
-                class="uppercase text-black text-lg font-fraucesBold bg-white rounded-full py-4 px-8"
+                href="#services"
+                class="md:text-white text-lg text-grayish-blue3 md:hover:text-desaturated-blue transition ease-in-out"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="md:text-white text-lg text-grayish-blue3 md:hover:text-desaturated-blue transition ease-in-out"
+                >Projects</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#contact"
+                class="uppercase text-black text-lg font-fraucesBold md:bg-white rounded-full py-4 px-8 bg-dark-yellow md:hover:bg-dark-blue transition ease-in-out md:hover:text-white"
                 >Contact</a
               >
             </li>
@@ -52,6 +75,7 @@
     <main>
       <div
         class="grid text-center grid-cols-1 md:grid-cols-2 md:text-left md:items-center"
+        id="about"
       >
         <img
           src="../images/mobile/image-transform.jpg"
@@ -122,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-col-1 md:grid-cols-2 content-center">
+      <div class="grid grid-col-1 md:grid-cols-2 content-center" id="services">
         <div
           class="flex bg-graphicMobile h-[600px] bg-no-repeat bg-cover bg-top text-center flex-col justify-end pb-12 px-4 md:bg-graiphicDesktop lg:h-[700px]"
         >
@@ -210,7 +234,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4">
+      <div class="grid grid-cols-2 md:grid-cols-4" id="projects">
         <div>
           <img
             src="../images/mobile/image-gallery-milkbottles.jpg"
@@ -263,7 +287,7 @@
       </div>
     </main>
 
-    <footer class="bg-dark-cyan2 py-16 px-12">
+    <footer class="bg-dark-cyan2 py-16 px-12" id="contact">
       <img
         src="../images/mobile/logo-footer.svg"
         alt=""
@@ -272,26 +296,45 @@
       <ul
         class="flex gap-[20px] mt-[40px] mb-[80px] justify-center md:gap-[50px]"
       >
-        <li><a href="" class="text-dark-cyan1">About</a></li>
-        <li><a href="" class="text-dark-cyan1">Servicies</a></li>
-        <li><a href="" class="text-dark-cyan1">Projects</a></li>
+        <li>
+          <a
+            href="#about"
+            class="text-dark-cyan1 transition ease-in-out md:hover:text-white"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            class="text-dark-cyan1 transition ease-in-out md:hover:text-white"
+            >Servicies</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="text-dark-cyan1 transition ease-in-out md:hover:text-white"
+            >Projects</a
+          >
+        </li>
       </ul>
       <ul class="flex justify-center gap-[20px] md:gap-[30px]">
         <li>
-          <a href="">
+          <a href="#">
             <img src="../images/icon-facebook.svg" alt="" />
           </a>
         </li>
         <li>
-          <a href=""> <img src="../images/icon-instagram.svg" alt="" /> </a>
+          <a href="#"> <img src="../images/icon-instagram.svg" alt="" /> </a>
         </li>
         <li>
-          <a href=""> <img src="../images/icon-twitter.svg" alt="" /> </a>
+          <a href="#"> <img src="../images/icon-twitter.svg" alt="" /> </a>
         </li>
         <li>
-          <a href=""><img src="../images/icon-pinterest.svg" alt="" /></a>
+          <a href="#"><img src="../images/icon-pinterest.svg" alt="" /></a>
         </li>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
